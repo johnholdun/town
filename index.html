@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Town</title>
+		<script src="underscore.js"></script>
+		<script src="town.js"></script>
+		<meta name="viewport" content="minimal-ui, width=640, user-scalable=no">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background: #000;
+			}
+
+			img {
+				image-rendering: optimizeSpeed;
+				image-rendering: -moz-crisp-edges;
+				image-rendering: -webkit-optimize-contrast;
+				image-rendering: optimize-contrast;
+				-ms-interpolation-mode: nearest-neighbor;
+			}
+
+			#viewport {
+				overflow: hidden;
+				margin: 0 auto;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				width: 720px;
+				height: 576px;
+				margin: -288px -360px;
+			}
+
+			.player {
+				display: block;
+				position: absolute;
+				z-index: 3;
+				transition: 0.1s;
+			}
+
+			#map {
+				display: block;
+				position: absolute;
+				transition: 0.1s;
+			}
+
+			#land {
+				display: block;
+				z-index: 1;
+			}
+		</style>
+	</head>
+	<body>
+    <div id="viewport">
+	    <div id="map">
+		    <img id="land" src="kanto.png" width="5570" height="5808">
+	    </div>
+    </div>
+	</body>
+</html>
