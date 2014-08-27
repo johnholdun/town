@@ -44,8 +44,8 @@ addEventListener "load", ->
   # el.collision.setAttribute "width", el.land.getAttribute "width"
   # el.collision.setAttribute "height", el.land.getAttribute "height"
 
-  # if window.localStorage and window.localStorage.userId
-  #   userId = window.localStorage.userId
+  if window.localStorage and window.localStorage.userId
+    userId = window.localStorage.userId
 
   sendUpdate()
 

@@ -50,6 +50,9 @@
     el.map.setAttribute("height", parseInt(el.map.offsetHeight, 10) * dim.tile.factor);
     el.land.setAttribute("width", el.map.getAttribute("width"));
     el.land.setAttribute("height", el.map.getAttribute("height"));
+    if (window.localStorage && window.localStorage.userId) {
+      userId = window.localStorage.userId;
+    }
     return sendUpdate();
   });
 
